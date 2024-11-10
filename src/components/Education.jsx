@@ -5,6 +5,9 @@ import icpc from "../images/others/icpc.jpg";
 import uap from "../images/others/uap.jpg";
 import uap2 from "../images/others/uap2.jpg";
 import icpc2 from "../images/others/usicpc.jpg";
+import dc from "../images/others/dc.jpg";
+import chm from "../images/others/chm.jpg";
+import skl from "../images/others/skl.jpg";
 
 const Education = () => {
   return (
@@ -75,14 +78,15 @@ const Education = () => {
         >
           <div className="mb-4 ">
             <div>
-              <h1 className="text-3xl font-bold">University of Asia Pacific</h1>
+              <h1 className="text-3xl font-bold">Dhaka College</h1>
               <br />
               <h1 className="text-2xl font-semibold">
-                Bachelor of Science in Computer Science and Engineering
+                Higher Secondary School Certificate
               </h1>
               <br />
-              <p className="text-xl"> Passing year: 2023 </p>
-              
+              <p className="text-xl"> Group: Science </p>
+              <br />
+              <p className="text-xl"> Passing year: 2016 </p>
             </div>
           </div>
         </motion.div>
@@ -94,7 +98,14 @@ const Education = () => {
           transition={{ duration: 1 }}
           className="w-full flex justify-center"
         >
-          <img src="" style={{ width: "90%" }} alt="Image 1" />
+          <div className="album-container">
+            <div className="img-holder">
+              <img src={dc} alt="Image 1" />
+            </div>
+            <div className="img-holder">
+              <img src={chm} alt="Image 2" />
+            </div>
+          </div>
         </motion.div>
       </div>
 
@@ -107,7 +118,7 @@ const Education = () => {
           transition={{ duration: 1 }}
           className="w-full flex justify-center"
         >
-          <img src="" style={{ width: "90%" }} alt="Image 1" />
+          <img src={skl} style={{ width: "90%" }} alt="Image 1" />
         </motion.div>
         {/* 2nd */}
         <motion.div
@@ -118,13 +129,15 @@ const Education = () => {
         >
           <div className="mb-4 ">
             <div>
-              <h1 className="text-3xl font-bold">University of Asia Pacific</h1>
+              <h1 className="text-3xl font-bold">Motijheel Model High School and College</h1>
               <br />
               <h1 className="text-2xl font-semibold">
-                Bachelor of Science in Computer Science and Engineering
+                Secondary School Certificate
               </h1>
               <br />
-              <p className="text-xl"> Passing year: 2023 </p>
+              <p className="text-xl"> Group: Science </p>
+              <br />
+              <p className="text-xl"> Passing year: 2014 </p>
               
             </div>
           </div>
