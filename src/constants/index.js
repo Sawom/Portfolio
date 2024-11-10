@@ -3,7 +3,7 @@ I do my best work when I can share ideas and take part in all parts of a project
 `;
 
 export const CONTACT = {
-  address: "10 North Mugda , Dhaka ",
+  address: "North Mugda , Dhaka ",
   phoneNo: "01515608007 ",
   email: "asawom250@gmail.com",
 };

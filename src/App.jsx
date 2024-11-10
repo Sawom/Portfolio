@@ -5,6 +5,11 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Education from './components/Education';
+import Mern from './components/ProjectTypes/Mern';
+import ReactProject from './Components/ProjectTypes/ReactProject';
+import PSDtoHTML from './Components/ProjectTypes/PSDtoHTML';
+import Academic from './Components/ProjectTypes/Academic';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -15,10 +20,21 @@ const App = () => {
       <div className='container mx-auto px-2'>
       <Navbar/>
       <Hero />
-      {/* <About /> */}
       <Tech />
       <Experience />
-      <Projects />
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <Projects /> } >
+            <Route path='' element={ <Mern />} ></Route> 
+            <Route path='reactjs' element={ <ReactProject /> } ></Route>
+            <Route path='psd' element={ <PSDtoHTML /> } ></Route>
+            <Route path='academic' element={ <Academic /> } ></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
+      
       <Education />
       <Contact />
       </div>
@@ -26,4 +42,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

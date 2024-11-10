@@ -22,3 +22,11 @@
   height: auto;
   display: block;
 }
+
+.cardStyle{
+    transition: all 0.3s;
+}
+
+.cardStyle:hover{
+    transform: scale(1.02);
+}

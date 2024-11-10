@@ -29,7 +29,7 @@ import { AiOutlineFundView } from 'react-icons/ai';
 
 const PSDtoHTML = () => {
     return (
-        <div className='mx-auto container' >
+        <div className='mx-auto container my-10' >
             {/* element */}
             <div className='grid lg:grid-cols-3 gap-8  md:grid-cols-2' >
                     {/* 8th part */}

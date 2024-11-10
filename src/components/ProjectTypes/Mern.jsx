@@ -21,9 +21,9 @@ const Mern = () => {
     return (
 
         <div >
-            <div className='mx-auto  container' >
+            <div className='mx-auto  container my-10' >
                 {/* element */}
-                <div className='grid lg:grid-cols-3 gap-5  md:grid-cols-3 h-full' >
+                <div className='grid lg:grid-cols-3 gap-5  md:grid-cols-2 h-full' >
 
                     {/* 1st */}
                     <div >
@@ -58,7 +58,7 @@ const Mern = () => {
                                 </div>
                             </figure>
                             <div className="card-body ">
-                                <h2 className="card-title">Bangladesh_Complaint_Portal</h2>
+                                <h2 className="card-title">Bangladesh Complaint Portal</h2>
                                 <div className="card-actions ">
                                     <a href="https://gilded-brioche-c3f211.netlify.app/"  target="_blank" >
                                         <br />

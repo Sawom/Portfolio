@@ -10,7 +10,7 @@ import { AiOutlineFundView } from 'react-icons/ai';
 
 const ReactProject = () => {
     return (
-        <div className='mx-auto container' >
+        <div className='mx-auto container my-10' >
             <div className='grid lg:grid-cols-3 gap-8  md:grid-cols-2 h-full' >
                 {/* 1st */}
                 <div className="card cardStyle bg-base-100 shadow-xl h-full">
