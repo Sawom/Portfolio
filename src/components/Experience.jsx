@@ -86,6 +86,7 @@ const Experience = () => {
           <img src={desk} style={{ width: "90%" }} alt="Image 1" />
         </motion.div>
       </div>
+      
     </div>
   );
 };
