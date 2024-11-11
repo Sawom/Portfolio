@@ -13,7 +13,7 @@ const Extracurricular = () => {
         Extracurricular Activities
       </motion.h2>
 
-      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2">
+      <div className="grid lg:grid-cols-2 gap-10  md:grid-cols-2 grid-cols-1">
         {/* 1st */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +36,7 @@ const Extracurricular = () => {
                     National Science Fair organized by Dhaka College(2015)
                   </td>
                   <td>
-                    Position: Champion, <br /> Category: Life science project{" "}
+                    Position: Champion, <br /> Category: Life science project
                   </td>
                 </tr>
                 {/* row 3 */}
@@ -78,7 +78,7 @@ const Extracurricular = () => {
                 <tr className="hover">
                   <td>
                     Intra-University Debating and Public Speaking Championship
-                    -2022{" "}
+                    -2022
                   </td>
                   <td>Organizer</td>
                 </tr>

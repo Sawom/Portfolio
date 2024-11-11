@@ -25,7 +25,7 @@ const Tech = () => {
             whileInView={{opacity:1 , y:0}} 
             initial={{opacity:0 , y:-100}} 
             transition={{duration:1.5}}
-        className="my-10 text-center text-4xl">Technologies</motion.h2>
+        className="my-20 text-center text-4xl">Technologies</motion.h2>
         <div className="flex flex-wrap items-center justify-center gap-6">
             <motion.div  variants={iconvarriant(5)} animate="animate" initial="initial" className="rounded-2xl text-center border-4 p-4 border-neutral-800">
                 <FaHtml5 className="text-7xl text-orange-500" />

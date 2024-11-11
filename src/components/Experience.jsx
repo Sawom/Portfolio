@@ -15,7 +15,7 @@ const Experience = () => {
       </motion.h1>
 
       {/* 1st work dnet*/}
-      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2">
+      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2 grid-cols-1">
         {/* 1st imgs*/}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -55,7 +55,7 @@ const Experience = () => {
       </div>
 
       {/* 2nd work fifo*/}
-      <div className="grid my-20 lg:grid-cols-2 gap-5  md:grid-cols-2">
+      <div className="grid my-20 lg:grid-cols-2 gap-5  md:grid-cols-2 grid-cols-1">
         {/* 1st paragraph*/}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}

@@ -16,13 +16,13 @@ const Education = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-10 text-center text-4xl"
+        className="my-20 text-center text-4xl"
       >
         Education
       </motion.h2>
 
       {/* 1st uap*/}
-      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2">
+      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2 grid-cols-1">
         {/* 1st imgs*/}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const Education = () => {
       </div>
 
       {/* 2nd DC*/}
-      <div className="grid my-20 lg:grid-cols-2 gap-5  md:grid-cols-2">
+      <div className="grid my-20 lg:grid-cols-2 gap-5  md:grid-cols-2 grid-cols-1">
         {/* 1st paragraph*/}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -110,7 +110,7 @@ const Education = () => {
       </div>
 
       {/* 3rd model skl */}
-      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2">
+      <div className="grid lg:grid-cols-2 gap-5  md:grid-cols-2 grid-cols-1">
         {/* 1st imgs*/}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
