@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from 'react-icons/fa6'
 
 const Navbar = () => {
   return (
-    <nav className='  flex items-center justify-between py-6'>
+    <nav className='  flex items-center justify-between py-6 px-4'>
         <div className='flex flex-shrink-0 items-center'>
             <h1 className='mx-2  font-bold text-xl font-serif'>Md. Abdur Rashid</h1>
         </div>
