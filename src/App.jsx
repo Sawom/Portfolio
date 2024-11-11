@@ -10,6 +10,7 @@ import Mern from "./components/ProjectTypes/Mern";
 import PSDtoHTML from "./components/ProjectTypes/PSDtoHTML";
 import ReactProject from "./Components/ProjectTypes/ReactProject";
 import Tech from "./components/Tech";
+import Extracurricular from "./components/Extracurricular";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
         <Education />
+        <Extracurricular />
         <Contact />
       </div>
     </div>
