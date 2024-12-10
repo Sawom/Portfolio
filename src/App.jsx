@@ -5,12 +5,12 @@ import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Mern from "./components/ProjectTypes/Mern";
-import PSDtoHTML from "./components/ProjectTypes/PSDtoHTML";
-import ReactProject from "./Components/ProjectTypes/ReactProject";
 import Tech from "./components/Tech";
 import Extracurricular from "./components/Extracurricular";
 import Academic from './components/ProjectTypes/Academic';
+import ReactProject from './components/ProjectTypes/ReactProject';
+import Mern from "./components/ProjectTypes/Mern";
+import PSDtoHTML from "./components/ProjectTypes/PSDtoHTML";
 
 const App = () => {
   return (
