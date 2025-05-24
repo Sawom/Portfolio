@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/Contact";
+import CursorEffect from "./components/CursorEffect";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Extracurricular from "./components/Extracurricular";
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <Router>
+      <CursorEffect />
       <div className="flex min-h-screen overflow-x-hidden">
         {/* Sidebar - visible on large devices, toggle for small & medium */}
         <div
