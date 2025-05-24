@@ -1,5 +1,5 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import img from "../images/others/me.png";
 
 const Sidebar = ({ onClose }) => {
   return (
@@ -13,11 +13,11 @@ const Sidebar = ({ onClose }) => {
         </div>
         <div className="flex flex-col items-center space-y-2 mb-8">
           <img
-            src="https://i.pravatar.cc/100"
+            src={img}
             alt="User"
-            className="w-20 h-20 rounded-full border-4 border-white"
+            className="w-24 h-24 rounded-full border-2 border-white"
           />
-          <h2 className="text-lg font-bold text-center">Atiqur Rahaman</h2>
+          <h2 className="text-lg font-bold text-center">Md. Abdur Rashid</h2>
         </div>
         <nav className="flex flex-col space-y-4 px-6">
           <NavLink
@@ -70,7 +70,7 @@ const Sidebar = ({ onClose }) => {
             💼
           </a>
         </div>
-        <p>© 2025 Atiqur Rahaman</p>
+        <p>© 2025 Md. Abdur Rashid </p>
       </div>
     </div>
   );
