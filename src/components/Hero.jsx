@@ -1,42 +1,63 @@
-import {HERO_CONTENT} from "../constants/index";
 import { motion } from "framer-motion";
-import profile from '../images/others/me.png';
+import { HERO_CONTENT } from "../constants";
 
-const Container = (delay) =>({
-  hidden : {x:-100 , opacity:0},
-  visible : {
-    x : 0 ,
-    opacity : 1 ,
-    transition : {duration : 0.5 , delay : delay},
+const Container = (delay) => ({
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay: delay },
   },
-})
+});
 
 const Hero = () => {
+  const handleContact = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=asawom250@gmail.com",
+      "_blank"
+    );
+  };
+
   return (
-    <div className="border-b border-neutral-800 pb-20 lg:mb-35 px-4">
-        <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/2 ">
-            <div className="flex flex-col items-center lg:items-start">
-                <motion.h1 variants={Container(0)} initial="hidden" animate="visible"  className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl">Md. Abdur Rashid</motion.h1>
-                <motion.span variants={Container(0.5)} initial="hidden" animate="visible" className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Web Developer</motion.span>
-                <motion.p variants={Container(1)} initial="hidden" animate="visible" className="my-2 py-8 tracking-tighter max-w-xl font-light">{HERO_CONTENT}</motion.p>
-                <a href="https://drive.google.com/drive/folders/1tE9W_kbBbnvHOnLUQ4y4ZC0OFJYQiAWr?usp=sharing"  target="_blank">
-                  <button className="btn btn-outline btn-md border-4 mt-6 ">  <span className='flex px-2'>  My Resume/CV </span>  </button>
-                </a>
-            </div>
-            </div>
-            <div className="w-full lg:w-1/2 lg:p-8">
-            <div className="flex justify-center ">
-                <motion.img 
-                 initial={{x:100 , opacity:0}} 
-                 animate={{x:0 , opacity:1}}
-                 transition={{duration:1 , delay:1.2}}
-                className="rounded-xl w-96" src={profile} alt="Profile Pic" />
-            </div>
-            </div>
+    <div className="w-full font-roboto  border-b border-neutral-800 pb-16 lg:mb-10 min-h-screen flex items-center justify-center">
+      <div className="flex flex-wrap w-full">
+        <div className="w-full md:w-1/2 mx-auto">
+          <div className="flex flex-col items-start md:items-start lg:items-start">
+            <motion.h1
+              variants={Container(0)}
+              initial="hidden"
+              animate="visible"
+              className="pb-8 tracking-tight lg:mt-16 "
+            >
+              <p className="mb-2 flex mt-4  ">
+                {/* <img src={hand} className="hand " alt="" /> */}
+                <span className=" lg:text-5xl font-bold md:text-4xl text-3xl">
+                  HELLO,
+                </span>
+              </p>
+              <p className="mb-2 lg:text-5xl font-bold md:text-4xl text-3xl ">
+                I AM Web Developer | MERN Stack Specialist
+              </p>
+            </motion.h1>
+            <motion.p
+              variants={Container(1)}
+              initial="hidden"
+              animate="visible"
+              className="my-2 mb-6 tracking-tighter w-100"
+            >
+              {HERO_CONTENT}
+            </motion.p>
+            <button
+              onClick={handleContact}
+              className="bg-cyan-600 text-white py-2 px-6 rounded-lg  transition duration-300"
+            >
+              Contact Me
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;
