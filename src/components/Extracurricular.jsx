@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 const Extracurricular = () => {
   return (
@@ -13,8 +12,8 @@ const Extracurricular = () => {
         Extracurricular Activities
       </motion.h2>
 
-      <div className="grid lg:grid-cols-2 gap-10  md:grid-cols-2 grid-cols-1">
-        {/* 1st */}
+      <div className="grid lg:grid-cols-1 gap-10  md:grid-cols-1 grid-cols-1">
+        {/* 1st table */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -23,32 +22,47 @@ const Extracurricular = () => {
         >
           <p className="text-center font-bold text-xl my-10">Achievements</p>
           <div className="overflow-x-auto">
-            <table className="table roboto">
+            <table className="w-full text-white text-sm md:text-base font-medium rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-gray-800">
+                  <th className="text-left px-4 py-3">Title</th>
+                  <th className="text-left px-4 py-3">Achievement</th>
+                </tr>
+              </thead>
               <tbody>
                 {/* row 1 */}
-                <tr className="hover">
-                  <td>Director of Student welfare - UAP</td>
-                  <td>Best Volunteer Award</td>
+                <tr className="hover:bg-gray-700 transition duration-200">
+                  <td className="px-4 py-3">
+                    Director of Student Welfare - UAP
+                  </td>
+                  <td className="px-4 py-3">Best Volunteer Award</td>
                 </tr>
                 {/* row 2 */}
-                <tr className="hover">
-                  <td>
-                    National Science Fair organized by Dhaka College(2015)
+                <tr className="hover:bg-gray-700 transition duration-200">
+                  <td className="px-4 py-3">
+                    National Science Fair, Dhaka College (2015)
                   </td>
-                  <td>
-                    Position: Champion, <br /> Category: Life science project
+                  <td className="px-4 py-3">
+                    Champion <br className="hidden sm:inline" />
+                    <span className="block sm:inline">
+                      {" "}
+                      | Life Science Project
+                    </span>
                   </td>
                 </tr>
                 {/* row 3 */}
-                <tr className="hover">
-                  <td>Inter Department Programming Contest</td>
-                  <td>Position: 12th</td>
+                <tr className="hover:bg-gray-700 transition duration-200">
+                  <td className="px-4 py-3">
+                    Inter Department Programming Contest
+                  </td>
+                  <td className="px-4 py-3">Position: 12th</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </motion.div>
-        {/* 2nd */}
+
+        {/* 2nd table */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
