@@ -33,6 +33,25 @@ export const EXPERIENCE =[
   }
 ]
 
+// education
+export const EDUCATION = [
+  {
+    degree: "Bachelor of Science in Computer Science and Engineering",
+    institution: "University of Asia Pacific",
+    date: "Passing Year: 2023",
+  },
+  {
+    degree: "H.S.C in Science",
+    institution: "Dhaka College",
+    date: "Passing Year: 2016",
+  },
+  {
+    degree: "S.S.C in Science",
+    institution: "Motijheel Model High School and College",
+    date: "Passing Year: 2014",
+  },
+];
+
 
 export const CONTACT = {
   address: "North Mugda , Dhaka ",

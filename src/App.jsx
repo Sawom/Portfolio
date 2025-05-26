@@ -14,6 +14,7 @@ import ReactProject from "./components/ProjectTypes/ReactProject";
 import Projects from "./components/Projects";
 import Sidebar from "./components/Sidebar";
 import Tech from "./components/Tech";
+import img from "./images/others/me.png";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -40,12 +41,12 @@ const App = () => {
                 &#9776;
               </button>
               <img
-                src="https://i.pravatar.cc/40"
+                src={img}
                 alt="User"
-                className="w-8 h-8 rounded-full border"
+                className="w-12 h-12 rounded-full border"
               />
               <span className="font-semibold whitespace-nowrap">
-                Atiqur Rahaman
+                Md. Abdur Rashid
               </span>
             </div>
           </div>
