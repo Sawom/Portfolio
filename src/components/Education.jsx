@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
-import "../css/album.css";
-import icpc from "../images/others/icpc.jpg";
-import uap from "../images/others/uap.jpg";
-import uap2 from "../images/others/uap2.jpg";
-import icpc2 from "../images/others/usicpc.jpg";
-import dc from "../images/others/dc.jpg";
-import chm from "../images/others/chm.jpg";
-import skl from "../images/others/skl.jpg";
 import { EDUCATION } from "../constants";
+import "../css/album.css";
 
 const Education = () => {
   return (
@@ -33,10 +25,6 @@ const Education = () => {
           ))}
         </div>
       </section>
-
-
-
-
     </div>
   );
 };
