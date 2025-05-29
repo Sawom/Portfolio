@@ -69,18 +69,26 @@ const PSDtoHTML = () => {
             {psdData.map((project, index) => (
               <div
                 key={index}
-                className="relative group block overflow-hidden rounded-md shadow-lg"
+                className="relative group overflow-hidden rounded-md shadow-lg flex flex-col h-[400px] bg-cyan-800"
               >
-                <img
-                  src={project.imgurl}
-                  alt={project.title}
-                  className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                {/* hover overlay */}
+                {/* Title (clamped to 2 lines) */}
+                <p className="text-white font-medium p-4 line-clamp-2 ">
+                  {project.title}
+                </p>
+
+                {/* Image */}
+                <div className="flex-1 overflow-hidden">
+                  <img
+                    src={project.imgurl}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                {/* Hover overlay */}
                 <div className="absolute inset-0 bg-cyan-700 bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {/* Inner flex column for stacking */}
                   <div className="flex flex-col items-center">
-                    <p className="text-white text-lg text-center font-semibold my-4">
+                    <p className="text-white text-lg text-center font-semibold mb-4 line-clamp-2">
                       {project.title}
                     </p>
                     {/* Buttons in row (x-axis) */}
