@@ -1,4 +1,3 @@
-import { AiOutlineFundView } from "react-icons/ai";
 import react1 from "../../images/react/react1.png";
 import react2 from "../../images/react/react2.png";
 import react3 from "../../images/react/react3.png";
@@ -47,125 +46,54 @@ const reactData = [
 
 const ReactProject = () => {
   return (
-    <div className="mx-auto container my-10">
-      <div className="grid lg:grid-cols-3 gap-8  md:grid-cols-2 h-full">
-        {/* 1st */}
-        <div className="card cardStyle bg-base-100 shadow-xl h-full">
-          <figure>
-            <img src={react1} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title"> Auto Repair Services </h2>
-            <div className="card-actions justify-end">
-              <a href="https://moduleten-f3434.web.app/" target="_blank">
-                <button className="btn btn-outline btn-sm border-4 mt-6">
-                  <span className="flex px-2">
-                    <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* 2nd */}
-        <div className="card cardStyle bg-base-100 shadow-xl h-full">
-          <figure>
-            <img src={react2} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title"> Ema-Jhon </h2>
-            <div className="card-actions justify-end">
-              <a href="https://webproject-94b72.web.app/" target="_blank">
-                <button className="btn btn-outline btn-sm border-4 mt-6">
-                  <span className="flex px-2">
-                    <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* 3rd */}
-        <div className="card cardStyle bg-base-100 shadow-xl h-full">
-          <figure>
-            <img src={react3} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title"> Medi-Care-Medicine-Shop </h2>
-            <div className="card-actions justify-end">
-              <a href="https://medicinesite.web.app/" target="_blank">
-                <button className="btn btn-outline btn-sm border-4 mt-6">
-                  <span className="flex px-2">
-                    <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* 4th */}
-        <div className="card cardStyle bg-base-100 shadow-xl h-full">
-          <figure>
-            <img src={react4} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title"> EduCare </h2>
-            <div className="card-actions justify-end">
-              <a
-                href="https://elegant-sunshine-612c50.netlify.app/"
-                target="_blank"
+    <div>
+      <div className="mx-auto font-roboto container my-10">
+        {/* element */}
+        <div className="grid lg:grid-cols-3 gap-5  md:grid-cols-2 h-full"></div>
+        <section className="py-16 px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {reactData.map((project, index) => (
+              <div
+                key={index}
+                className="relative group block overflow-hidden rounded-md shadow-lg"
               >
-                <button className="btn btn-outline btn-sm border-4 mt-6">
-                  <span className="flex px-2">
-                    <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                  </span>
-                </button>
-              </a>
-            </div>
+                <img
+                  src={project.imgurl}
+                  alt={project.title}
+                  className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                {/* hover overlay */}
+                <div className="absolute inset-0 bg-cyan-700 bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Inner flex column for stacking */}
+                  <div className="flex flex-col items-center">
+                    <p className="text-white text-lg text-center font-semibold my-4">
+                      {project.title}
+                    </p>
+                    {/* Buttons in row (x-axis) */}
+                    <div className="flex gap-3">
+                      <a
+                        href={project.livesite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-cyan-700 text-sm px-2 py-2 rounded hover:bg-gray-100 transition"
+                      >
+                        View
+                      </a>
+                      <a
+                        href={project.details}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-cyan-700 text-sm px-2 py-2 rounded hover:bg-gray-100 transition"
+                      >
+                        Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-        {/* 5th */}
-        <div className="card cardStyle bg-base-100 shadow-xl h-full">
-          <figure>
-            <img src={react5} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title"> Restaurant (SPA) </h2>
-            <div className="card-actions justify-end">
-              <a
-                href="https://zesty-lollipop-7b38b1.netlify.app/"
-                target="_blank"
-              >
-                <button className="btn btn-outline btn-sm border-4 mt-6">
-                  <span className="flex px-2">
-                    <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* 6th */}
-        <div className="card cardStyle bg-base-100 shadow-xl h-full">
-          <figure>
-            <img src={react6} alt="Shoes" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title"> DECATHLON-Sports-Shop (SPA) </h2>
-            <div className="card-actions justify-end">
-              <a
-                href="https://endearing-buttercream-ae39c4.netlify.app/"
-                target="_blank"
-              >
-                <button className="btn btn-outline btn-sm border-4 mt-6">
-                  <span className="flex px-2">
-                    <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                  </span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
