@@ -22,7 +22,7 @@ const App = () => {
   return (
     <Router>
       <CursorEffect />
-      <div className="flex min-h-screen overflow-x-hidden">
+      <div className="flex min-h-screen overflow-x-hidden scroll-smooth">
         {/* Sidebar - visible on large devices, toggle for small & medium */}
         <div
           className={`fixed top-0 left-0 z-40 h-screen w-72 bg-gray-900 transition-transform transform ${
@@ -53,20 +53,34 @@ const App = () => {
 
           {/* Main Content */}
           <main className="ml-0 lg:ml-72 flex-1 px-6 md:px-10 lg:px-16 xl:px-24 max-w-7xl mx-auto text-neutral-300 selection:bg-cyan-300 selection:text-cyan-900">
-            <Hero />
-            <Tech />
-            <Experience />
-            <Routes>
-              <Route path="/" element={<Projects />}>
-                <Route index element={<Mern />} />
-                <Route path="reactjs" element={<ReactProject />} />
-                <Route path="psd" element={<PSDtoHTML />} />
-                <Route path="academic" element={<Academic />} />
-              </Route>
-            </Routes>
-            <Education />
-            <Extracurricular />
-            <Contact />
+            <section id="about">
+              <Hero />
+            </section>
+            <section id="skills">
+              <Tech />
+            </section>
+            <section id="experience">
+              <Experience />
+            </section>
+            <section id="projects">
+              <Routes>
+                <Route path="/" element={<Projects />}>
+                  <Route index element={<Mern />} />
+                  <Route path="reactjs" element={<ReactProject />} />
+                  <Route path="psd" element={<PSDtoHTML />} />
+                  <Route path="academic" element={<Academic />} />
+                </Route>
+              </Routes>
+            </section>
+            <section id="education">
+              <Education />
+            </section>
+            <section id="extra">
+              <Extracurricular />
+            </section>
+            <section id="contact">
+              <Contact />
+            </section>
           </main>
         </div>
       </div>

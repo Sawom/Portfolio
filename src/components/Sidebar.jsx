@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import img from "../images/others/me.png";
 
 const sections = [
-  { id: "home", label: "Home" },
-  { id: "whyme", label: "Why Me?" },
+  { id: "about", label: "About Me" },
   { id: "skills", label: "Skills" },
-  { id: "process", label: "Work Process" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
+  { id: "extra", label: "Extracurricular" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -62,44 +61,28 @@ const Sidebar = ({ onClose }) => {
           <img
             src={img}
             alt="User"
-            className="w-24 h-24 rounded-full border-2 border-white"
+            className="w-28 h-28 rounded-full border-2 border-white"
           />
           <h2 className="text-lg font-bold text-center">Md. Abdur Rashid</h2>
         </div>
+        {/* section navigate */}
         <nav className="flex flex-col space-y-4 px-6">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              isActive ? "text-cyan-400 font-bold" : "hover:text-gray-300"
-            }
-          >
-            MERN
-          </NavLink>
-          <NavLink
-            to="/reactjs"
-            className={({ isActive }) =>
-              isActive ? "text-cyan-400 font-bold" : "hover:text-gray-300"
-            }
-          >
-            React
-          </NavLink>
-          <NavLink
-            to="/psd"
-            className={({ isActive }) =>
-              isActive ? "text-cyan-400 font-bold" : "hover:text-gray-300"
-            }
-          >
-            PSD to HTML
-          </NavLink>
-          <NavLink
-            to="/academic"
-            className={({ isActive }) =>
-              isActive ? "text-cyan-400 font-bold" : "hover:text-gray-300"
-            }
-          >
-            Academic
-          </NavLink>
+          {sections.map(({ id, label }) => (
+            <ScrollLink
+              key={id}
+              smooth={true}
+              duration={1000}
+              to={id}
+              className={`transition-colors cursor-pointer ${
+                activeSection === id
+                  ? " font-bold text-cyan-400 "
+                  : " hover:text-gray-300"
+              }`}
+              style={activeSection === id ? { color: "text-cyan-400" } : {}}
+            >
+              {label}
+            </ScrollLink>
+          ))}
         </nav>
       </div>
       <div className="mt-10 text-center text-sm text-gray-400 px-4">
