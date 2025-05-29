@@ -33,7 +33,7 @@ const App = () => {
         </div>
 
         {/* Main content area */}
-        <div className="flex-1 flex flex-col min-h-screen bg-neutral-950  ">
+        <div className="flex-1 flex flex-col min-h-screen bg-black">
           {/* Show toggle header always on non-large screens */}
           <div className="lg:hidden flex items-center justify-between bg-black p-3 text-white sticky top-0 z-30 shadow-md">
             <div className="flex items-center gap-2">

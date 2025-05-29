@@ -1,8 +1,8 @@
-import { FaNodeJs,FaHtml5,FaFigma,FaPython,FaJsSquare,FaBootstrap,FaCss3Alt } from "react-icons/fa";
-import { RiTailwindCssFill, RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiDaisyui,SiMongodb,SiMysql,SiTypescript, SiFirebase } from "react-icons/si";
-import { TbBrandCpp, TbSquareLetterCFilled  } from "react-icons/tb";
 import { motion } from "framer-motion";
+import { FaBootstrap, FaCss3Alt, FaFigma, FaHtml5, FaJsSquare, FaNodeJs, FaPython } from "react-icons/fa";
+import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { SiDaisyui, SiExpress, SiFirebase, SiMongodb, SiMysql, SiTypescript } from "react-icons/si";
+import { TbBrandCpp, TbSquareLetterCFilled } from "react-icons/tb";
 
 
 const iconvarriant = (duration) =>({
@@ -25,7 +25,7 @@ const Tech = () => {
             whileInView={{opacity:1 , y:0}} 
             initial={{opacity:0 , y:-100}} 
             transition={{duration:1.5}}
-        className="my-20 text-center text-4xl">Technologies</motion.h2>
+        className="my-20 text-center text-4xl">Skills</motion.h2>
         <div className="flex flex-wrap items-center justify-center gap-6">
             <motion.div  variants={iconvarriant(5)} animate="animate" initial="initial" className="rounded-2xl text-center border-4 p-4 border-neutral-800">
                 <FaHtml5 className="text-7xl text-orange-500" />
