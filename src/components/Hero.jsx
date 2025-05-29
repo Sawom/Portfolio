@@ -47,12 +47,23 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-            <button
-              onClick={handleContact}
-              className="bg-cyan-600 text-white py-2 px-6 rounded-lg  transition duration-300"
-            >
-              Contact Me
-            </button>
+            <div className="flex gap-5">
+              <button
+                onClick={handleContact}
+                className="bg-cyan-600 text-white py-2 px-6 rounded-lg  transition duration-300"
+              >
+                Contact Me
+              </button>
+              {/* cv */}
+              <a
+                href="https://drive.google.com/drive/folders/1WrgvylSegU2FVo7V-4krsW2CY_Hemhub?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-cyan-600 text-white py-2 px-6 rounded-lg  transition duration-300"
+              >
+                My CV
+              </a>
+            </div>
           </div>
         </div>
       </div>
