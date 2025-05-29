@@ -1,48 +1,4 @@
-import react1 from "../../images/react/react1.png";
-import react2 from "../../images/react/react2.png";
-import react3 from "../../images/react/react3.png";
-import react4 from "../../images/react/react4.png";
-import react5 from "../../images/react/react5.png";
-import react6 from "../../images/react/react6.png";
-
-const reactData = [
-  {
-    title: "Auto Repair Services",
-    imgurl: react1,
-    livesite: "https://moduleten-f3434.web.app/",
-    details: "https://github.com/Sawom/Auto-Repair-Services",
-  },
-  {
-    title: "Ema-Jhon Shop",
-    imgurl: react2,
-    livesite: "https://webproject-94b72.web.app",
-    details: "https://github.com/Sawom/Ema-Jhon-With-Firebase",
-  },
-  {
-    title: "Medi-Care-Medicine-Shop",
-    imgurl: react3,
-    livesite: "https://medicinesite.web.app/",
-    details: "https://github.com/Sawom/Medi-Care-Medicine-Shop",
-  },
-  {
-    title: "EduCare",
-    imgurl: react4,
-    livesite: "https://elegant-sunshine-612c50.netlify.app/",
-    details: "https://github.com/Sawom/EduCare-react",
-  },
-  {
-    title: "Restaurant (SPA)",
-    imgurl: react5,
-    livesite: "https://zesty-lollipop-7b38b1.netlify.app/",
-    details: "https://github.com/Sawom/Resturant-react-?tab=readme-ov-file",
-  },
-  {
-    title: "DECATHLON-Sports-Shop",
-    imgurl: react6,
-    livesite: "https://endearing-buttercream-ae39c4.netlify.app/",
-    details: "https://github.com/Sawom/DECATHLON-Sports-Shop-with-React",
-  },
-];
+import { reactData } from "../../constants";
 
 const ReactProject = () => {
   return (

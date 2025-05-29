@@ -1,41 +1,4 @@
-import mern1 from "../../images/mern/arsTravels/mern1.png";
-import mern12 from "../../images/mern/arsTravels/mern12.png";
-import mern13 from "../../images/mern/arsTravels/mern13.png";
-import mern4 from "../../images/mern/arsTravels/mern4.png";
-import mern7 from "../../images/mern/arsTravels/mern7.png";
-
-const mernData = [
-  {
-    title: "Bangladesh Complaint Portal",
-    imgurl: mern13,
-    livesite: "https://gilded-brioche-c3f211.netlify.app/",
-    details: "https://github.com/Sawom/Bangladesh_Complaint_Portal",
-  },
-  {
-    title: "Laptop Land",
-    imgurl: mern12,
-    livesite: "https://ubiquitous-llama-8cf89b.netlify.app/",
-    details: "https://github.com/Sawom/Laptop_Land",
-  },
-  {
-    title: "ARS-Restaurant",
-    imgurl: mern7,
-    livesite: "https://voluble-crisp-63c7a2.netlify.app/",
-    details: "https://github.com/Sawom/ARS-Restaurant",
-  },
-  {
-    title: "ARS-Travels",
-    imgurl: mern1,
-    livesite: "https://toursite-44305.web.app/",
-    details: "https://github.com/Sawom/ARS-Travels",
-  },
-  {
-    title: "Planet-Shopping",
-    imgurl: mern4,
-    livesite: "https://ecommerceapp-f7c88.web.app/",
-    details: "https://github.com/Sawom/Planet-Shopping",
-  },
-];
+import { mernData } from "../../constants";
 
 const Mern = () => {
   return (
