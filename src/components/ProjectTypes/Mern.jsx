@@ -9,26 +9,31 @@ const mernData = [
     title: "Bangladesh Complaint Portal",
     imgurl: mern13,
     livesite: "https://gilded-brioche-c3f211.netlify.app/",
+    details: "https://github.com/Sawom/Bangladesh_Complaint_Portal",
   },
   {
     title: "Laptop Land",
     imgurl: mern12,
     livesite: "https://ubiquitous-llama-8cf89b.netlify.app/",
+    details: "https://github.com/Sawom/Laptop_Land",
   },
   {
     title: "ARS-Restaurant",
     imgurl: mern7,
     livesite: "https://voluble-crisp-63c7a2.netlify.app/",
+    details: "https://github.com/Sawom/ARS-Restaurant",
   },
   {
     title: "ARS-Travels",
     imgurl: mern1,
     livesite: "https://toursite-44305.web.app/",
+    details: "https://github.com/Sawom/ARS-Travels",
   },
   {
     title: "Planet-Shopping",
     imgurl: mern4,
     livesite: "https://ecommerceapp-f7c88.web.app/",
+    details: "https://github.com/Sawom/Planet-Shopping",
   },
 ];
 
@@ -68,7 +73,7 @@ const Mern = () => {
                         View
                       </a>
                       <a
-                        href={project.livesite}
+                        href={project.details}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-white text-cyan-700 text-sm px-2 py-2 rounded hover:bg-gray-100 transition"
