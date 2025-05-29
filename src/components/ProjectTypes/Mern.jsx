@@ -39,13 +39,10 @@ const Mern = () => {
         {/* element */}
         <div className="grid lg:grid-cols-3 gap-5  md:grid-cols-2 h-full"></div>
         <section className="py-16 px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {mernData.map((project, index) => (
-              <a
+              <div
                 key={index}
-                href={project.livesite}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="relative group block overflow-hidden rounded-md shadow-lg"
               >
                 <img
@@ -57,15 +54,31 @@ const Mern = () => {
                 <div className="absolute inset-0 bg-cyan-700 bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {/* Inner flex column for stacking */}
                   <div className="flex flex-col items-center">
-                    <p className="text-white text-lg font-semibold my-4">
+                    <p className="text-white text-lg text-center font-semibold my-4">
                       {project.title}
                     </p>
-                    <button className="bg-white text-cyan-700 text-sm px-2 py-2 rounded hover:bg-gray-100 transition">
-                      View
-                    </button>
+                    {/* Buttons in row (x-axis) */}
+                    <div className="flex gap-3">
+                      <a
+                        href={project.livesite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-cyan-700 text-sm px-2 py-2 rounded hover:bg-gray-100 transition"
+                      >
+                        View
+                      </a>
+                      <a
+                        href={project.livesite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-cyan-700 text-sm px-2 py-2 rounded hover:bg-gray-100 transition"
+                      >
+                        Details
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </section>
