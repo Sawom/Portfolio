@@ -26,52 +26,52 @@ import { AiOutlineFundView } from "react-icons/ai";
 
 const psdData = [
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "Tea-House",
+    imgurl: psd1,
+    livesite: "https://sawom.github.io/Tea-House-ph/",
+    details: "https://github.com/Sawom/Tea-House-ph",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "G3-Architects",
+    imgurl: psd5,
+    livesite: "https://sawom.github.io/G3-Architects-ph/",
+    details: "https://github.com/Sawom/G3-Architects-ph",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "Biker-Zone",
+    imgurl: psd7,
+    livesite: "https://sawom.github.io/Biker-Zone-ph/",
+    details: "https://github.com/Sawom/Biker-Zone-ph",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "BuildCon",
+    imgurl: psd10,
+    livesite: "https://sawom.github.io/BuildCon-ph/",
+    details: "https://github.com/Sawom/BuildCon-ph",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "Business-Agency",
+    imgurl: psd13,
+    livesite: "https://sawom.github.io/Business-Agency-ph/",
+    details: "https://github.com/Sawom/Business-Agency-ph",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "Honda-Bazar",
+    imgurl: psd16,
+    livesite: "https://sawom.github.io/WDPr8-Honda-Bazar/index.html",
+    details: "https://github.com/Sawom/WDPr8-Honda-Bazar",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "Penguin-Fashion",
+    imgurl: psd19,
+    livesite: "https://sawom.github.io/WDPr7-Penguin-Fashion/index.html",
+    details: "https://github.com/Sawom/WDPr7-Penguin-Fashion",
   },
   {
-    title: "",
-    imgurl: react1,
-    livesite: "",
-    details: "",
+    title: "Panda-Ecommerce",
+    imgurl: psd21,
+    livesite: "https://sawom.github.io/WDPr6-Panda-Ecommerce/index.html",
+    details: "https://github.com/Sawom/WDPr6-Panda-Ecommerce",
   },
 ];
 
@@ -80,68 +80,6 @@ const PSDtoHTML = () => {
     <div className="mx-auto container my-10">
       {/* element */}
       <div className="grid lg:grid-cols-3 gap-8  md:grid-cols-2">
-        {/* 8th part */}
-        <div>
-          <div className="card cardStyle bg-base-100 shadow-2xl">
-            {/* figure er jaygay carousel use korchi */}
-            <figure>
-              <div className="carousel w-full">
-                {/* 1st slide */}
-                <div id="slide221" className="carousel-item relative w-full">
-                  <img alt="projectImage" src={psd21} className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide223" className="btn btn-circle">
-                      ❮
-                    </a>
-                    <a href="#slide222" className="btn btn-circle">
-                      ❯
-                    </a>
-                  </div>
-                </div>
-                {/* 2nd slide */}
-                <div id="slide222" className="carousel-item relative w-full">
-                  <img alt="projectImage" src={psd22} className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide221" className="btn btn-circle">
-                      ❮
-                    </a>
-                    <a href="#slide223" className="btn btn-circle">
-                      ❯
-                    </a>
-                  </div>
-                </div>
-                {/* 3rd slide */}
-                <div id="slide223" className="carousel-item relative w-full">
-                  <img alt="projectImage" src={psd23} className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide222" className="btn btn-circle">
-                      ❮
-                    </a>
-                    <a href="#slide221" className="btn btn-circle">
-                      ❯
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </figure>
-            <div className="card-body ">
-              <h2 className="card-title"> Panda-Ecommerce </h2>
-              <div className="card-actions justify-end">
-                <a
-                  href="https://sawom.github.io/WDPr6-Panda-Ecommerce/index.html"
-                  target="_blank"
-                >
-                  <button className="btn btn-outline btn-sm border-4 mt-6">
-                    <span className="flex px-2">
-                      <AiOutlineFundView className="mr-2" size={16} /> view{" "}
-                    </span>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* 1st part */}
         <div>
           <div className="card cardStyle bg-base-100 shadow-2xl">
@@ -539,6 +477,68 @@ const PSDtoHTML = () => {
               <div className="card-actions justify-end">
                 <a
                   href="https://sawom.github.io/WDPr7-Penguin-Fashion/index.html"
+                  target="_blank"
+                >
+                  <button className="btn btn-outline btn-sm border-4 mt-6">
+                    <span className="flex px-2">
+                      <AiOutlineFundView className="mr-2" size={16} /> view{" "}
+                    </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 8th part */}
+        <div>
+          <div className="card cardStyle bg-base-100 shadow-2xl">
+            {/* figure er jaygay carousel use korchi */}
+            <figure>
+              <div className="carousel w-full">
+                {/* 1st slide */}
+                <div id="slide221" className="carousel-item relative w-full">
+                  <img alt="projectImage" src={psd21} className="w-full" />
+                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide223" className="btn btn-circle">
+                      ❮
+                    </a>
+                    <a href="#slide222" className="btn btn-circle">
+                      ❯
+                    </a>
+                  </div>
+                </div>
+                {/* 2nd slide */}
+                <div id="slide222" className="carousel-item relative w-full">
+                  <img alt="projectImage" src={psd22} className="w-full" />
+                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide221" className="btn btn-circle">
+                      ❮
+                    </a>
+                    <a href="#slide223" className="btn btn-circle">
+                      ❯
+                    </a>
+                  </div>
+                </div>
+                {/* 3rd slide */}
+                <div id="slide223" className="carousel-item relative w-full">
+                  <img alt="projectImage" src={psd23} className="w-full" />
+                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide222" className="btn btn-circle">
+                      ❮
+                    </a>
+                    <a href="#slide221" className="btn btn-circle">
+                      ❯
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </figure>
+            <div className="card-body ">
+              <h2 className="card-title"> Panda-Ecommerce </h2>
+              <div className="card-actions justify-end">
+                <a
+                  href="https://sawom.github.io/WDPr6-Panda-Ecommerce/index.html"
                   target="_blank"
                 >
                   <button className="btn btn-outline btn-sm border-4 mt-6">
