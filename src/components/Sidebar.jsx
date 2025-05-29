@@ -1,3 +1,4 @@
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import img from "../images/others/me.png";
 
@@ -56,20 +57,30 @@ const Sidebar = ({ onClose }) => {
         </nav>
       </div>
       <div className="mt-10 text-center text-sm text-gray-400 px-4">
-        <div className="flex justify-center gap-4 mb-2">
-          <a href="#" className="hover:text-white">
-            📘
+        <div className="flex justify-center space-x-4 my-4">
+          <a
+            href="https://www.facebook.com/share/1HzJCxPUS1/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookF className="text-white text-xl hover:text-cyan-400 transition" />
           </a>
-          <a href="#" className="hover:text-white">
-            🎯
+          <a
+            href="https://github.com/Sawom"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-white text-xl hover:text-cyan-400 transition" />
           </a>
-          <a href="#" className="hover:text-white">
-            📺
-          </a>
-          <a href="#" className="hover:text-white">
-            💼
+          <a
+            href="https://www.linkedin.com/in/abdur-rashid-sawom-3379a0262"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn className="text-white text-xl hover:text-cyan-400 transition" />
           </a>
         </div>
+
         <p>© 2025 Md. Abdur Rashid </p>
       </div>
     </div>
