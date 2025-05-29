@@ -11,33 +11,33 @@ import ac9 from "../../images/academic/ac9.jpg";
 const academicData = [
   {
     title: "Donkey Kong game with Unity",
-    imgurl: ac1,
+    imgurl: ac5,
     details: "https://github.com/Sawom/Donkey_Kong",
   },
   {
     title: "Educational-Media with Django",
-    imgurl: ac2,
+    imgurl: ac1,
     details: "https://github.com/Sawom/UAP-Educational-Media",
   },
   {
     title: "Food Network with Django",
-    imgurl: ac3,
+    imgurl: ac2,
     details: "https://github.com/Sawom/FoodNetwork_DjangoProject",
   },
   {
     title: "A Banking management System with Java",
-    imgurl: ac4,
+    imgurl: ac3,
     details:
       "https://github.com/Sawom/A-Banking-management-System-Java-project",
   },
   {
     title: "Car Shop Management System with SQL",
-    imgurl: ac5,
+    imgurl: ac4,
     details:
       "https://github.com/Sawom/CAR-SHOP-MANAGEMENT-SYSTEM-SQL-Database-Project",
   },
   {
-    title: "Conference Room Schedule System with Greedy Algorithm",
+    title: "Conference Room with Greedy Algorithm",
     imgurl: ac6,
     details:
       "https://github.com/Sawom/Conference-Room-Schedule-System-Algorithm-Project",
@@ -62,100 +62,50 @@ const academicData = [
 const Academic = () => {
   return (
     <div>
-      <div className="mx-auto container my-10">
-        <div className="grid lg:grid-cols-3 gap-8  md:grid-cols-2">
-          {/* 1st */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac5} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title"> Donkey Kong with Unity </h2>
-            </div>
-          </div>
+      <div className="mx-auto font-roboto container my-10">
+        {/* element */}
+        <div className="grid lg:grid-cols-3 gap-5  md:grid-cols-2 h-full"></div>
+        <section className="py-16 px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {academicData.map((project, index) => (
+              <div
+                key={index}
+                className="relative group overflow-hidden rounded-md shadow-lg flex flex-col h-[400px] bg-cyan-800"
+              >
+                {/* Title (clamped to 2 lines) */}
+                <p className="text-white font-medium p-4 line-clamp-2 ">
+                  {project.title}
+                </p>
 
-          {/* 2nd */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac1} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title"> Educational-Media with Django </h2>
-            </div>
+                {/* Image */}
+                <div className="flex-1 overflow-hidden">
+                  <img
+                    src={project.imgurl}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-cyan-700 bg-opacity-90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex flex-col items-center">
+                    <p className="text-white text-lg text-center font-semibold mb-4 line-clamp-2">
+                      {project.title}
+                    </p>
+                    <a
+                      href={project.details}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white text-cyan-700 text-sm px-4 py-2 rounded hover:bg-gray-100 transition"
+                    >
+                      Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          {/* 3rd */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac2} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title"> Food Network with Django </h2>
-            </div>
-          </div>
-          {/* 4th */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac3} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                {" "}
-                A Banking management System with Java{" "}
-              </h2>
-            </div>
-          </div>
-          {/* 5th */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac4} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                {" "}
-                Car Shop Management System with SQL{" "}
-              </h2>
-            </div>
-          </div>
-          {/* 6th */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac6} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                {" "}
-                Conference Room Schedule System with Greedy Algorithm{" "}
-              </h2>
-            </div>
-          </div>
-          {/* 7th */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac7} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title"> Banking System with CPP </h2>
-            </div>
-          </div>
-          {/* 8th */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac8} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title"> Number-Guessing-game with CPP </h2>
-            </div>
-          </div>
-          {/* 9th */}
-          <div className="card cardStyle bg-base-100 shadow-xl">
-            <figure>
-              <img src={ac9} alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title"> Calender with C </h2>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
