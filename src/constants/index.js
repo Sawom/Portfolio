@@ -2,6 +2,7 @@
 import mern1 from "../images/mern/arsTravels/mern1.png";
 import mern12 from "../images/mern/arsTravels/mern12.png";
 import mern13 from "../images/mern/arsTravels/mern13.png";
+import mern16 from "../images/mern/arsTravels/mern16.png";
 import mern4 from "../images/mern/arsTravels/mern4.png";
 import mern7 from "../images/mern/arsTravels/mern7.png";
 
@@ -97,6 +98,12 @@ export const CONTACT = {
 
 // projects sections mern
 export const mernData = [
+  {
+    title: "ARS Health Care",
+    imgurl: mern16,
+    livesite: "https://healthcare-client-theta.vercel.app",
+    details: "https://github.com/Sawom/Health_Care_Client",
+  },
   {
     title: "Bangladesh Complaint Portal",
     imgurl: mern13,

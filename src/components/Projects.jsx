@@ -21,7 +21,7 @@ const Projects = () => {
             className="w-full">
           <div className="flex justify-center">
             <ul className="menu  menu-horizontal bg-black text-white rounded-box">
-              <li>  <Link className="bg-black text-white hover:text-white active:text-white focus:text-white focus:outline-none" to=''  > MERN  </Link>  </li>
+              <li>  <Link className="bg-black text-white hover:text-white active:text-white focus:text-white focus:outline-none" to=''  > Full Stack  </Link>  </li>
               <li> <Link className="bg-black text-white hover:text-white active:text-white focus:text-white focus:outline-none" to='/reactjs'  >  React  </Link> </li>
               <li>  <Link className="bg-black text-white hover:text-white active:text-white focus:text-white focus:outline-none" to='/psd'  >  PSD to HTML  </Link> </li>
               <li> <Link className="bg-black text-white hover:text-white active:text-white focus:text-white focus:outline-none" to='/academic'  > Academic  </Link>  </li>
