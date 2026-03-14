@@ -5,12 +5,14 @@ import {
   FaCss3Alt,
   FaFigma,
   FaHtml5,
+  FaJava,
   FaJsSquare,
   FaNodeJs,
   FaPython,
 } from "react-icons/fa";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import {
+  SiAntdesign,
   SiDaisyui,
   SiExpress,
   SiFirebase,
@@ -20,6 +22,7 @@ import {
   SiMysql,
   SiPostgresql,
   SiPrisma,
+  SiShadcnui,
   SiTypescript,
 } from "react-icons/si";
 import { TbBrandCpp, TbSquareLetterCFilled } from "react-icons/tb";
@@ -204,7 +207,9 @@ const Tech = () => {
         <SiPostgresql />
         <SiPrisma />
         <SiJsonwebtokens />
-        {/* <AiFillAntDesign /> */}
+        <SiShadcnui />
+        <FaJava />
+        <SiAntdesign />
         <SiMui />
       </div>
     </div>
