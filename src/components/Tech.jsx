@@ -94,9 +94,39 @@ const Tech = () => {
           initial="initial"
           className="rounded-2xl text-center border-4 p-4 border-neutral-800"
         >
+          <SiMui className="text-7xl " color="#28B6F6" />
+          Material UI
+        </motion.div>
+        <motion.div
+          variants={iconvarriant(2.5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
           <SiDaisyui className="text-7xl text-green-300" />
           Daisyui
         </motion.div>
+
+        <motion.div
+          variants={iconvarriant(2.5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiShadcnui className="text-7xl text-white" />
+          Shadcn
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(2.5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiAntdesign className="text-7xl " color="#1677FF" />
+          Ant Design
+        </motion.div>
+
         <motion.div
           variants={iconvarriant(2.5)}
           animate="animate"
@@ -207,10 +237,8 @@ const Tech = () => {
         <SiPostgresql />
         <SiPrisma />
         <SiJsonwebtokens />
-        <SiShadcnui />
+
         <FaJava />
-        <SiAntdesign />
-        <SiMui />
       </div>
     </div>
   );
