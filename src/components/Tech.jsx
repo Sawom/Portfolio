@@ -61,6 +61,7 @@ const Tech = () => {
           <FaHtml5 className="text-7xl text-orange-500" />
           HTML
         </motion.div>
+
         <motion.div
           variants={iconvarriant(2)}
           animate="animate"
@@ -70,6 +71,7 @@ const Tech = () => {
           <FaCss3Alt className="text-7xl text-blue-500" />
           CSS
         </motion.div>
+
         <motion.div
           variants={iconvarriant(2)}
           animate="animate"
@@ -79,6 +81,7 @@ const Tech = () => {
           <FaBootstrap className="text-7xl text-purple-500" />
           Bootstrap
         </motion.div>
+
         <motion.div
           variants={iconvarriant(2.5)}
           animate="animate"
@@ -88,6 +91,7 @@ const Tech = () => {
           <RiTailwindCssFill className="text-7xl text-blue-400" />
           Tailwind
         </motion.div>
+
         <motion.div
           variants={iconvarriant(2.5)}
           animate="animate"
@@ -97,6 +101,7 @@ const Tech = () => {
           <SiMui className="text-7xl " color="#28B6F6" />
           Material UI
         </motion.div>
+
         <motion.div
           variants={iconvarriant(2.5)}
           animate="animate"
@@ -136,6 +141,7 @@ const Tech = () => {
           <RiReactjsLine className="text-7xl text-cyan-400" />
           React js
         </motion.div>
+
         <motion.div
           variants={iconvarriant(3)}
           animate="animate"
@@ -145,68 +151,7 @@ const Tech = () => {
           <FaNodeJs className="text-7xl text-green-500" />
           Node js
         </motion.div>
-        <motion.div
-          variants={iconvarriant(5)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <FaJsSquare className="text-7xl text-yellow-400" />
-          JavaScript
-        </motion.div>
-        <motion.div
-          variants={iconvarriant(5)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <SiTypescript className="text-7xl text-blue-500" />
-          Typescript
-        </motion.div>
-        <motion.div
-          variants={iconvarriant(5)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <FaPython className="text-7xl text-blue-400" />
-          Python
-        </motion.div>
-        <motion.div
-          variants={iconvarriant(5)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <TbBrandCpp className="text-7xl text-blue-600" />
-          C++
-        </motion.div>
-        <motion.div
-          variants={iconvarriant(5)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <TbSquareLetterCFilled className="text-7xl text-blue-600" />C
-        </motion.div>
-        <motion.div
-          variants={iconvarriant(4)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <SiMongodb className="text-7xl text-green-400" />
-          MongoDB
-        </motion.div>
-        <motion.div
-          variants={iconvarriant(5)}
-          animate="animate"
-          initial="initial"
-          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
-        >
-          <SiMysql className="text-7xl text-blue-400" />
-          Mysql
-        </motion.div>
+
         <motion.div
           variants={iconvarriant(2.5)}
           animate="animate"
@@ -216,6 +161,106 @@ const Tech = () => {
           <SiExpress className="text-7xl text-green-500" />
           Express
         </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <FaJsSquare className="text-7xl text-yellow-400" />
+          JavaScript
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiTypescript className="text-7xl text-blue-500" />
+          Typescript
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <FaPython className="text-7xl text-blue-400" />
+          Python
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <TbBrandCpp className="text-7xl text-blue-600" />
+          C++
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <TbSquareLetterCFilled className="text-7xl text-blue-600" />C
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <FaJava className="text-7xl " color="#F09726" />
+          Java
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(4)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiMongodb className="text-7xl text-green-400" />
+          MongoDB
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiMysql className="text-7xl text-blue-400" />
+          Mysql
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiPostgresql className="text-7xl" color="#396C94" />
+          PostgreeSQL
+        </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiPrisma className="text-7xl" color="#25AE95" />
+          Prisma ORM
+        </motion.div>
+
         <motion.div
           variants={iconvarriant(5)}
           animate="animate"
@@ -225,6 +270,17 @@ const Tech = () => {
           <SiFirebase className="text-7xl text-red-400" />
           Firebase
         </motion.div>
+
+        <motion.div
+          variants={iconvarriant(5)}
+          animate="animate"
+          initial="initial"
+          className="rounded-2xl text-center border-4 p-4 border-neutral-800"
+        >
+          <SiJsonwebtokens className="text-7xl " color='#D500F9' />
+          JWT Token
+        </motion.div>
+
         <motion.div
           variants={iconvarriant(5)}
           animate="animate"
@@ -234,11 +290,6 @@ const Tech = () => {
           <FaFigma className="text-7xl text-orange-400 " />
           Figma
         </motion.div>
-        <SiPostgresql />
-        <SiPrisma />
-        <SiJsonwebtokens />
-
-        <FaJava />
       </div>
     </div>
   );
